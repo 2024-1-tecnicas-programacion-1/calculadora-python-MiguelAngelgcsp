@@ -33,6 +33,12 @@ class TestCalcular(unittest.TestCase):
         valor_esperado = 1
         valor_actual = calcular(10, 3, '%')
         self.assertEqual(valor_esperado, valor_actual)
+        
+    def test_raiz(self):
+        valor_esperado = 2
+        valor_actual = calcular(8, 3, 'r')
+        self.assertEqual(valor_esperado, valor_actual)
+
 
     def test_operacion_invalida(self):
         with self.assertRaises(ValueError):
